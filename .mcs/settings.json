@@ -1,0 +1,86 @@
+{
+    "Arena.Component.Creature": {
+        "907cc401-2a72-4abb-b2d3-c7eb9ee64959": {
+            "baseInfo": {
+                "baseName": "",
+                "customId": "chicken",
+                "legacyId": "",
+                "name": "鸡",
+                "nameable": true,
+                "override": false,
+                "overrideId": "",
+                "overrideLegacyId": "",
+                "tags": []
+            },
+            "behaviorInfo": {
+                "lookAtPlayer": true,
+                "random_stroll": true,
+                "strollInfo": {
+                    "speedMultiplier": 0.8
+                }
+            },
+            "combatInfo": {
+                "attack": 3,
+                "enabled": true,
+                "health": {
+                    "max": 10,
+                    "value": 10
+                },
+                "melee": {
+                    "range": 2
+                },
+                "ranged": {
+                    "interval": 15,
+                    "radius": 15,
+                    "shooter": "arrow"
+                },
+                "targetInfo": {
+                    "interval": 5,
+                    "maxDistance": 8,
+                    "nearest": true,
+                    "targetType": []
+                },
+                "type": ""
+            },
+            "economyInfo": {
+                "loot": "",
+                "trade": {
+                    "chart": "",
+                    "name": "商人"
+                }
+            },
+            "logicInfo": {
+                "storyline": ""
+            },
+            "modelInfo": {
+                "collision": {
+                    "height": 1,
+                    "width": 1
+                },
+                "resource": "",
+                "scale": 1
+            },
+            "moveInfo": {
+                "movement": 0.25,
+                "physics": true,
+                "turn": 5,
+                "type": "",
+                "waterMovement": 0.25
+            },
+            "uuid": "907cc401-2a72-4abb-b2d3-c7eb9ee64959",
+            "version": 1
+        }
+    },
+    "Arena.Component.Creature.Version": [
+        0,
+        0,
+        1
+    ],
+    "Arena.Component.Namespace": "morechicken",
+    "Arena.Component.SimpleBlock": {},
+    "Arena.Component.SimpleBlock.Version": [
+        0,
+        0,
+        1
+    ]
+}
