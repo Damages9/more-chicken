@@ -1,5 +1,2 @@
-entity.morechicken:shitouji.name=石鸡
-tile.morechicken:block1.name=自定义方块1
 entity.morechicken:chicken.name=鸡
-item.spawn_egg.entity.morechicken:shitouji.name=石鸡
 item.spawn_egg.entity.morechicken:chicken.name=生成鸡

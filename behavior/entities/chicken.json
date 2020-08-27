@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "morechicken:chicken",
@@ -29,6 +29,10 @@
         "minecraft:behavior.scared": {
           "priority": 1,
           "sound_interval": 20
+        },
+        "minecraft:behavior.follow_parent": {
+          "priority": 5,
+          "speed_multiplier": 1.1
         }
       },
       "morechicken:chicken_angry": {
@@ -69,18 +73,18 @@
             {
               "mate_type": "morechicken:chicken",
               "baby_type": "morechicken:chicken",
-              "extra_baby_chance": 0.01,
-              "deny_parents_variant": {
-                "chance": 0.02,
-                "max_variant": 16
-              },
               "breed_event": {
                 "event": "minecraft:entity_born",
                 "target": "baby"
               }
             }
           ],
-          "require_tame": false
+          "require_tame": false,
+          "deny_parents_variant": {
+            "chance": 0.02,
+            "max_variant": 16
+          },
+          "extra_baby_chance": 0.01
         }
       }
     },
@@ -133,22 +137,28 @@
           "pumpkin_seeds"
         ],
         "breeds_with": {
+          "mate_type": "morechicken:chicken",
           "baby_type": "morechicken:chicken",
           "breed_event": {
             "event": "minecraft:entity_born",
             "target": "baby"
-          },
-          "mate_type": "morechicken:chicken"
+          }
         },
         "require_tame": false
+      },
+
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.5
       },
       "minecraft:can_climb": {},
       "minecraft:collision_box": {
         "height": 0.8,
         "width": 0.6
-      },
-      "minecraft:health": {
-        "value": [8, 12]
       },
       "minecraft:jump.static": {},
       "minecraft:movement": {
@@ -160,6 +170,10 @@
         "avoid_damage_blocks": true,
         "avoid_water": true
       },
+
+      "minecraft:health": {
+        "value": [4, 6]
+      },
       "minecraft:on_target_acquired": {
         "event": "minecraft:become_angry",
         "target": "self"
@@ -168,7 +182,12 @@
         "event": "minecraft:on_calm",
         "target": "self"
       },
-      "minecraft:physics": {}
+      "minecraft:physics": {},
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      }
     },
     "events": {
       "morechicken:on_calm": {
@@ -177,18 +196,12 @@
         }
       },
       "minecraft:ageable_grow_up": {
-        "sequence": [
-          {
-            "remove": {
-              "component_groups": ["morechicken:chicken_baby"]
-            }
-          },
-          {
-            "add": {
-              "component_groups": ["morechicken:chicken_adult"]
-            }
-          }
-        ]
+        "remove": {
+          "component_groups": ["morechicken:chicken_baby"]
+        },
+        "add": {
+          "component_groups": ["morechicken:chicken_adult"]
+        }
       }
     }
   }
