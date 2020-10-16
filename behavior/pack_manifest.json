@@ -1,26 +1,18 @@
 {
-    "dependencies": [],
-    "format_version": 1,
-    "header": {
-        "description": "",
-        "name": "behavior_pack_qvn1jas8",
-        "uuid": "a2ab8683-e20b-4257-9fe4-9bcb47ea7831",
-        "version": [
-            0,
-            0,
-            1
-        ]
-    },
-    "modules": [
-        {
-            "description": "",
-            "type": "data",
-            "uuid": "a4fa44f5-dea1-4a1c-99ef-691b8d510e3d",
-            "version": [
-                0,
-                0,
-                1
-            ]
-        }
-    ]
+  "dependencies": [],
+  "format_version": 1,
+  "header": {
+    "description": "",
+    "name": "more_chicken_behavior",
+    "uuid": "a2ab8683-e20b-4257-9fe4-9bcb47ea7831",
+    "version": [0, 0, 1]
+  },
+  "modules": [
+    {
+      "description": "",
+      "type": "data",
+      "uuid": "a4fa44f5-dea1-4a1c-99ef-691b8d510e3d",
+      "version": [0, 0, 1]
+    }
+  ]
 }

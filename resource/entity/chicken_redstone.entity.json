@@ -11,7 +11,7 @@
       "geometry": {
         "default": "geometry.morechicken.chicken"
       },
-      "identifier": "morechicken:chicken",
+      "identifier": "morechicken:chicken_redstone",
       "materials": {
         "default": "chicken",
         "legs": "chicken_legs"
@@ -30,11 +30,11 @@
         ]
       },
       "spawn_egg": {
-        "texture": "spawn_egg",
-        "texture_index": 0
+        "base_color": "#d43737",
+        "overlay_color": "#523028"
       },
       "textures": {
-        "default": "textures/entity/morechicken/chicken"
+        "default": "textures/entity/morechicken/redstone"
       }
     }
   }

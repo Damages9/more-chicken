@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "animations": {
+        "baby_transform": "animation.morechicken.chicken.baby_transform",
+        "general": "animation.morechicken.chicken.general",
+        "look_at_target": "animation.common.look_at_target",
+        "walk": "animation.morechicken.chicken.walk"
+      },
+      "geometry": {
+        "default": "geometry.morechicken.chicken"
+      },
+      "identifier": "morechicken:chicken_clay",
+      "materials": {
+        "default": "chicken",
+        "legs": "chicken_legs"
+      },
+      "render_controllers": ["controller.render.morechicken.chicken"],
+      "scripts": {
+        "animate": [
+          "general",
+          {
+            "walk": "query.modified_move_speed"
+          },
+          "look_at_target",
+          {
+            "baby_transform": "query.is_baby"
+          }
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#587688",
+        "overlay_color": "#cad9e4"
+      },
+      "textures": {
+        "default": "textures/entity/morechicken/clay"
+      }
+    }
+  }
+}
