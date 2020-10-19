@@ -126,7 +126,7 @@
         "breeds_with": [
           {
             "mate_type": "morechicken:chicken_cobblestone",
-            "baby_type": "morechicken:chicken_mossstone",
+            "baby_type": "morechicken:chicken_mossy_cobblestone",
             "breed_event": {
               "event": "minecraft:entity_born",
               "target": "baby"

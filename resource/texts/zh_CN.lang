@@ -10,7 +10,7 @@ item.spawn_egg.entity.morechicken:chicken_sand.name=生成沙鸡
 entity.morechicken:chicken_coal.name=煤鸡
 item.spawn_egg.entity.morechicken:chicken_coal.name=生成煤鸡
 
-entity.morechicken:chicken_log.name=煤鸡
+entity.morechicken:chicken_log.name=原木鸡
 item.spawn_egg.entity.morechicken:chicken_log.name=生成原木鸡
 
 entity.morechicken:chicken_clay.name=粘土鸡
@@ -37,8 +37,8 @@ item.spawn_egg.entity.morechicken:chicken_diamond.name=生成钻石鸡
 entity.morechicken:chicken_ice.name=冰鸡
 item.spawn_egg.entity.morechicken:chicken_ice.name=生成冰鸡
 
-entity.morechicken:chicken_packed_ice.name=浮冰鸡
-item.spawn_egg.entity.morechicken:chicken_packed_ice.name=生成浮冰鸡
+entity.morechicken:chicken_prismarine.name=海晶石鸡
+item.spawn_egg.entity.morechicken:chicken_prismarine.name=生成海晶石鸡
 
 entity.morechicken:chicken_quartz.name=下界石英鸡
 item.spawn_egg.entity.morechicken:chicken_quartz.name=生成下界石英鸡

@@ -2,7 +2,7 @@
   "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "morechicken:chicken_packed_ice",
+      "identifier": "morechicken:chicken_prismarine",
       "is_spawnable": true,
       "is_summonable": true
     },
@@ -66,7 +66,7 @@
     },
     "components": {
       "minecraft:spawn_entity": {
-        "spawn_item": "packed_ice"
+        "spawn_item": "prismarine"
       },
       "minecraft:type_family": {
         "family": ["chicken", "mob"]

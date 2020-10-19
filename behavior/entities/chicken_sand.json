@@ -134,7 +134,7 @@
           },
           {
             "mate_type": "morechicken:chicken_ice",
-            "baby_type": "morechicken:chicken_packed_ice",
+            "baby_type": "morechicken:chicken_prismarine",
             "breed_event": {
               "event": "minecraft:entity_born",
               "target": "baby"

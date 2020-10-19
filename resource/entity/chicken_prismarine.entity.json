@@ -11,7 +11,7 @@
       "geometry": {
         "default": "geometry.morechicken.chicken"
       },
-      "identifier": "morechicken:chicken_packed_ice",
+      "identifier": "morechicken:chicken_prismarine",
       "materials": {
         "default": "chicken",
         "legs": "chicken_legs"
@@ -34,7 +34,7 @@
         "overlay_color": "#c8e1f0"
       },
       "textures": {
-        "default": "textures/entity/morechicken/packed_ice"
+        "default": "textures/entity/morechicken/prismarine"
       }
     }
   }
