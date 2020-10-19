@@ -18,13 +18,12 @@
         },
         "minecraft:herd": {
           "min_size": 1,
-          "max_size": 2
+          "max_size": 4
         },
 
         "minecraft:biome_filter": {
           "all_of": [
-            { "test": "has_biome_tag", "operator": "==", "value": "desert" },
-            { "test": "has_biome_tag", "operator": "==", "value": "animal" }
+            { "test": "has_biome_tag", "operator": "==", "value": "desert" }
           ]
         }
       }
